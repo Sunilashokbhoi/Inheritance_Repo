@@ -7,28 +7,19 @@ public class Student {
     int id ;
     String name ;
     void setStudent(){
+        //  System.out.println("Enter The ");
         System.out.println("Enter The ID And NAME :");
         id = sc.nextInt();
         name = sc.next();
     }
 }
-class Result extends Student{
-    int perc ;
-    void setPerc(){
-        System.out.println("Enter The Percentage");
-        perc = sc.nextInt();
-    }
-    void getResult(){
-        System.out.println("ID:"+id);
-        System.out.println("Name:"+name);
-        System.out.println("Percentage:"+perc);
+class Internal extends Student{
+    int m1 ;
+    int m2 ;
+    void setMarks(){
+        System.out.println("Enter Marks M1 And M2:");
+        m1 = sc.nextInt();
+        m2 = sc.nextInt();
     }
 }
-class Main{
-    public static void main(String[] args){
-        Result result = new Result();
-        result.setStudent();
-        result.setPerc();
-        result.getResult();
-    }
-}
+
